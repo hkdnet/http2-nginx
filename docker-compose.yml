@@ -1,0 +1,12 @@
+---
+version: "2"
+services:
+  nginx:
+    build:
+      context: .
+    volumes:
+      - ./etc/nginx:/etc/nginx
+      - ./public:/var/www/http
+    ports:
+      - "8888:80"
+      - "443:443"
