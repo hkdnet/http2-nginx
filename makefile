@@ -1,3 +1,4 @@
+all: orig.png public/images public/index.html
 orig.png:
 	wget -O orig.png https://avatars1.githubusercontent.com/u/11524757
 public/images:
@@ -7,3 +8,4 @@ public/index.html: src/index.html.erb
 	mkdir -p public
 	erb src/index.html.erb > public/index.html
 
+.PHONY: all
