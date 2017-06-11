@@ -5,6 +5,8 @@
     <title>http2-nginx</title>
   </head>
   <body>
-    hello
+    <% (1..100).each do |i| %>
+    <img src="images/<%=i%>.png" />
+    <% end %>
   </body>
 </html>
