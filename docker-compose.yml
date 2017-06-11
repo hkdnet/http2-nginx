@@ -2,8 +2,7 @@
 version: "2"
 services:
   nginx:
-    build:
-      context: .
+    image: nginx:alpine
     volumes:
       - ./etc/nginx:/etc/nginx
       - ./public:/var/www/http
