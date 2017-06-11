@@ -6,6 +6,7 @@ services:
     volumes:
       - ./etc/nginx:/etc/nginx
       - ./public:/var/www/http
+      - ./certs:/etc/certs
     ports:
       - "8888:80"
       - "443:443"
